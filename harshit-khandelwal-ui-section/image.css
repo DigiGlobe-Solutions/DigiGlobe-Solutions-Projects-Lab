@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;700&family=Open+Sans&family=Poppins:ital,wght@1,700&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+  }
+
+  body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    line-height: 1.6;
+  }
+
+  h1{
+    
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin: 48px 0 60px 0;
+  }
+
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px ;
+  }
+
+  #search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    color: #333;
+  }
+
+  #search-button{
+    padding: 10px 20px;
+    background-color: #138065;
+    color: beige;
+    border: none;
+    font-size: 18px;
+    box-shadow : 0 0 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+
+  .search-results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width : 1200px;
+    margin: 0 auto;
+  }
+
+  .search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow:  0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .search-result img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2 ease-in-out;
+  }
+
+  .search-result:hover img{
+    opacity: 0.7;
+    
+  }
+
+  .search-result a{
+    font-size: 20px;
+    text-decoration: none;
+    color : #333;
+    display: block;
+    padding: 10px;
+    text-decoration: capitalize;
+  }
+
+  #show-more-button{
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+
+  @media screen and (max-width : 768px){
+    .search-result{
+        padding: 20px;
+    }
+    .search-result{
+        width: 45%;
+    }
+  }
+
+  @media screen and (max-width : 480px){
+    .search-result{
+        width: 100%;
+    }
+  }
