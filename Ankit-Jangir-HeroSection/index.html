@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" /> <!-- Linking to external CSS file -->
+  <title>HeroSection</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <!-- Navbar Header -->
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="#">Soul<span>Travel</span>.</a> <!-- Navbar logo -->
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <span><i class="ri-menu-line"></i></span> <!-- Menu icon -->
+      </div>
+    </div>
+    <!-- Navbar Links -->
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#">Destination</a></li> <!-- Navigation link -->
+      <li><a href="#">Package</a></li> <!-- Navigation link -->
+      <li><a href="#">Blog</a></li> <!-- Navigation link -->
+      <li><a href="#">About Us</a></li> <!-- Navigation link -->
+      <li><a href="#">Contact</a></li> <!-- Navigation link -->
+    </ul>
+    <!-- Navbar Buttons -->
+    <div class="nav__btns">
+      <button class="btn sign__up">Sign Up</button> <!-- Sign Up button -->
+      <button class="btn sign__in">Sign In</button> <!-- Sign In button -->
+    </div>
+  </nav>
+
+  <!-- Animation Images -->
+  <header class="header__container">
+    <div class="header__image">
+      <!-- Image cards with icons -->
+      <div class="header__image__card header__image__card-1">
+        <span><i class="ri-key-line"></i></span> <!-- Icon for hotel booking -->
+        Hotel Booking
+      </div>
+      <div class="header__image__card header__image__card-2">
+        <span><i class="ri-passport-line"></i></span> <!-- Icon for flight tickets -->
+        Flight Tickets
+      </div>
+      <div class="header__image__card header__image__card-3">
+        <span><i class="ri-map-2-line"></i></span> <!-- Icon for local events -->
+        Local Events
+      </div>
+      <div class="header__image__card header__image__card-4">
+        <span><i class="ri-guide-line"></i></span> <!-- Icon for tour guide -->
+        Tour Guide
+      </div>
+      <img src="assets/header.png" alt="header" /> <!-- Main header image -->
+    </div>
+    <div class="header__content">
+      <!-- Main header content -->
+      <h1>LET'S GO!<br />THE <span>ADVENTURE</span> IS WAITING FOR YOU</h1> <!-- Main heading -->
+      <p>
+        <!-- Main paragraph -->
+        Embark on Your Journey Today and Discover Uncharted Wonders Around the
+        World - Your Adventure Awaits with Exciting Experiences, Unforgettable
+        Memories, and Endless Opportunities
+      </p>
+      <form action="/"> <!-- Search form -->
+        <div class="input__row">
+          <!-- Form row -->
+          <div class="input__group">
+            <!-- Form group 1 -->
+            <h5>Destination</h5> <!-- Label for destination input -->
+            <div>
+              <!-- Input group with icon -->
+              <span><i class="ri-map-pin-line"></i></span> <!-- Icon for destination -->
+              <input type="text" placeholder="Paris, France" /> <!-- Destination input -->
+            </div>
+          </div>
+          <div class="input__group">
+            <!-- Form group 2 -->
+            <h5>Date</h5> <!-- Label for date input -->
+            <div>
+              <!-- Input group with icon -->
+              <span><i class="ri-calendar-2-line"></i></span> <!-- Icon for date -->
+              <input type="text" placeholder="17 July 2024" /> <!-- Date input -->
+            </div>
+          </div>
+        </div>
+        <button type="submit">Search</button> <!-- Submit button -->
+      </form>
+      <div class="bar">
+        <!-- Copyright notice -->
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </div>
+  </header>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/scrollreveal"></script> <!-- Scroll reveal library -->
+  <script src="main.js"></script> <!-- Main JavaScript file -->
+</body>
+</html>
