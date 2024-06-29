@@ -40,8 +40,7 @@ export const words = [
     text: "Section",
   },
   {
-    text: "Design.",
-    className: "text-blue-500 dark:text-blue-500",
+    text: "Design",
   },
 ];
 export const navItems = [
