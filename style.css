@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    opacity: 0.5; /* Adjust this value to make the video more or less transparent */
+    z-index: -1;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(31, 29, 29, 0.74);
+}
+
+.container .info h1 {
+    font-size: 3.7rem;
+    margin-bottom: 1rem;
+    color: rgb(241, 222, 48);
+    font-style: oblique;
+}
+
+.container .info h3 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+    color: rgb(125, 180, 180);
+    font-style: calc();
+}
+
+.container .info p {
+    font-size: 1.3rem;
+    max-width: 70%;
+    margin: auto;
+    color: color-mix(in hsl shorter hue, color percentage, color percentage);
+}
+
+.container .info a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(43, 40, 40);
+    border-radius: 3px;
+    font-size: 1.8rem;
+    padding: 0.5em 2em;
+    margin-top: 2rem;
+    color: antiquewhite;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+}
