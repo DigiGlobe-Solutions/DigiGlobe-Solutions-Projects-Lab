@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" >
+        <div class="logo-container">
+            <a href="/" class="logo">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <b>John</b></h1>
+            <h2>A Full Stack Web Developer</h2>
+            <p>Full Stack Developer crafting innovative web solutions. I specialize in building robust and user-centric applications from conception to deployment. With a strong foundation in both front-end and back-end development, I deliver exceptional digital experiences that exceed expectations.</p>
+            <button onclick="scrollToContact()">Contact Me</button> </div>
+        <div class="hero-image">
+        </div>
+    </section>
+    
+    <section class="contacts" id="contact"> <h1>Contact Me</h1>
+        <p>Get in touch to discuss your project or learn more about my skills.</p>
+        <div class="contact-items">
+            <ul>
+                <li>
+                    <a href="tel:+1234567890">Mobile: +1234567890</a>
+                </li>
+                <li>
+                    <a href="mailto:youremail@example.com">Email: youremail@example.com</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/yourlinkedinprofile">LinkedIn: Your LinkedIn Profile</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/yourinstagram">Instagram: Your Instagram</a>
+                </li>
+                <li>
+                    <a href="https://github.com/yourgithubusername">GitHub: Your GitHub Username</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+<script>
+  function scrollToContact() {
+  const contactSection = document.getElementById('contact');
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+</script>   
+</body>
+</html>

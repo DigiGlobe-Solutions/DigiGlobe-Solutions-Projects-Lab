@@ -1,0 +1,142 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px ; 
+    background-color: #f2f2f2; 
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 50px;
+    border-radius: 50%; 
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    font-size:larger;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .hero {
+    height: 600px; 
+    display: flex;
+  }
+  
+  .hero-content {
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black; 
+  }
+  .hero-image{
+    flex: 1;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    margin-right: 50px;
+    max-width: 400px;
+    max-height: 80vh;
+  }
+  
+  .hero-content h1 {
+    font-size: 35px;
+    margin-bottom: 0px;
+  }
+  
+  .hero-content h1 b {
+    color: #007bff;
+    font-size: 80px;
+
+  }
+  
+  .hero-content h2 {
+    font-size: 35px;
+    margin-bottom: 0px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .hero-content button {
+    background-color: #007bff;
+    color: #fff;
+    margin-left: 300px ;
+    margin-right:300px ;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .hero-content button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+  
+    
+  }
+  
+.contacts {
+  margin: 30px 30px; 
+  padding: 0px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.contact-items{
+  align-items: center;
+  justify-content: center;
+  margin-left: 520px;
+  margin-right: 520px;
+}
+
+.contact-items ul {
+  list-style: none;
+  padding: 0;
+  align-items: center;
+
+}
+
+.contact-items li {
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+.contact-items a {
+  font-size: 18px;
+  text-decoration: none;
+  color:black    ;
+  display: flex;
+  text-align: center; 
+  justify-content: center;
+  
+}
+
+.contacts a:hover {
+  color: #007bff;
+  text-decoration: underline;
+  
+}
+
+  
