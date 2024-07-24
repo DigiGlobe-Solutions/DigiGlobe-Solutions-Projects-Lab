@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.hero {
+    position: relative;
+    height: 250vh;
+    width: 98%;
+    background: linear-gradient(to bottom right, #ff5733, #c70039), url('./Images/background.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 30px;
+    background: rgba(14, 2, 2, 0.844);
+    z-index: 1000; /* Ensure navbar is above other elements */
+}
+
+.logo {
+    padding: 5px 10px;
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-right: 20px; /* Add padding to the right side */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000; /* Ensure toggle is above other elements */
+    color: #fff;
+    font-size: 24px;
+}
+
+.hero-content-container {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    text-align: left;
+    margin-top: 50px; /* Adjust top margin for proper alignment */
+}
+
+.hero-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero-content {
+    flex: 2;
+    padding: 20px;
+    text-align: center; /* Center text within hero-content */
+}
+
+.headline {
+    font-size: 3em;
+    margin: 0;
+}
+
+.subheadline {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #120202;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+    margin-top: 20px; /* Add margin to separate the button from text */
+}
+
+.cta-button:hover {
+    background: #7df135;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        display: none; /* Hide by default */
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 0;
+        position: absolute;
+        top: 60px; /* Adjust top based on the height of the navbar */
+        left: 0;
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-100%); /* Hide off-screen */
+    }
+
+    .nav-links.active {
+        display: flex;
+        transform: translateY(0); /* Show menu */
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(235, 227, 227, 0.915);
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .hero-content-container {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px; /* Adjust top margin for mobile view */
+        padding: 0 10px; /* Ensure no horizontal overflow */
+    }
+
+    .hero-content,
+    .hero-image {
+        padding: 10px;
+    }
+
+    .headline {
+        font-size: 2.5em;
+    }
+
+    .subheadline {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        background-size: cover; /* Ensure background covers the entire area */
+    }
+
+    .headline {
+        font-size: 2em;
+    }
+
+    .subheadline {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+
+    .hero-content-container {
+        margin-top: 10px; /* Further adjust top margin for smaller screens */
+    }
+}
