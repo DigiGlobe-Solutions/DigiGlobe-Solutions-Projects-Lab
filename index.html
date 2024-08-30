@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Watches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <!-- Navigation Bar -->
+        <nav class="nav-bar">
+            <div class="logo">
+                <h2 style="color: rgb(240, 16, 210);">Vision Luxury Watches </h2>
+                <!-- <img src="logo-placeholder.png" alt="Luxury Watches Logo"> -->
+            </div>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#new-arrivals">New Arrivals</a></li>
+                <li id="cartList" class="cart-list"><a href="#" class="cart-icon" id="cart-icon"
+                        onclick="openCartModal()">Card 🛒</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- <div class="menu-toggle" id="menu-toggle">&#9776;</div>  -->
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="fade-in">Timeless Elegance Awaits</h1>
+            <p class="fade-in">Discover Our Exclusive Collection of Luxury Watches</p>
+            <a href="#shop" class=" cta-button-explore bounce-in ">Explore the Collection</a>
+        </div>
+    </header>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop-section1">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="image/w1.jpg" alt="Product 1">
+                <h3>Luxury Watch 1</h3>
+                <p>&#8377;199.99</p>
+                <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                <div id="message" class="message"></div>
+            </div>
+            <!-- Product Card Example -->
+            <div class="product-card">
+                <img src="image/w2.jpg" alt="Product 2">
+                <h3>Luxury Watch 2</h3>
+                <p>&#8377;199.99</p>
+                <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                <div id="message" class="message"></div>
+            </div>
+            <!-- Product Card Example -->
+            <div class="product-card">
+                <img src="image/w3.jpg" alt="Product 3">
+                <h3>Luxury Watch 3</h3>
+                <p>&#8377;199.99</p>
+                <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                <div id="message" class="message"></div>
+            </div>
+            <!-- Product Card Example -->
+            <div class="product-card">
+                <img src="image/w4.jpg" alt="Product 4">
+                <h3>Luxury Watch 4</h3>
+                <p>&#8377;199.99</p>
+                <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                <div id="message" class="message"></div>
+            </div>
+            <!-- Product Card Example -->
+            <div class="product-card">
+                <img src="image/w5.jpg" alt="Product 5">
+                <h3>Luxury Watch 5</h3>
+                <p>&#8377;199.99</p>
+                <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                <div id="message" class="message"></div>
+            </div>
+            <!-- Product Card Example -->
+            <div class="product-card">
+                <img src="image/w6.jpg" alt="Product 6">
+                <h3>Luxury Watch 6</h3>
+                <p>&#8377;199.99</p>
+                <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                <div id="message" class="message"></div>
+            </div>
+            <!-- Product Card Example -->
+            <div class="product-card">
+                <img src="image/w7.jpg" alt="Product 7">
+                <h3>Luxury Watch 7</h3>
+                <p>&#8377;199.99</p>
+                <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                <div id="message" class="message"></div>
+            </div>
+            <!-- Product Card Example -->
+            <div class="product-card">
+                <img src="image/w8.jpg" alt="Product 8">
+                <h3>Luxury Watch 8</h3>
+                <p>&#8377;199.99</p>
+                <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                <div id="message" class="message"></div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section id="new-arrivals" class="new-arrivals-section">
+        <h2>New Arrivals</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <!-- Product Card Example -->
+                <div class="slide">
+                    <!-- Product Card Example -->
+                    <div class="arrival-product">
+                        <div class="product-card">
+                            <img src="image/a1.jpg" alt="Arrival Product 1"><br>
+                        </div>
+                        <div class="product-card">
+                            <h3>New Arrival 1</h3>
+                            <p>&#8377;199.99</p>
+                            <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                            <div id="message" class="message"></div>
+                        </div>
+                    </div>
+                    <!-- Product Card Example -->
+                    <div class="arrival-product">
+                        <div class="product-card">
+                            <img src="image/a2.jpg" alt="Arrival Product 2"><br>
+                        </div>
+                        <div class="product-card">
+                            <h3>New Arrival 2</h3>
+                            <p>&#8377;199.99</p>
+                            <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                            <div id="message" class="message"></div>
+                        </div>
+                    </div>
+                    <!-- Product Card Example -->
+                    <div class="arrival-product">
+                        <div class="product-card">
+                            <img src="image/a3.jpg" alt="Arrival Product 3"><br>
+                        </div>
+                        <div class="product-card">
+                            <h3>New Arrival 3</h3>
+                            <p>&#8377;199.99</p>
+                            <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                            <div id="message" class="message"></div>
+                        </div>
+                    </div>
+                    <!-- Product Card Example -->
+                    <div class="arrival-product">
+                        <div class="product-card">
+                            <img src="image/a4.jpg" alt="Arrival Product 4"><br>
+                        </div>
+                        <div class="product-card">
+                            <h3>New Arrival 4</h3>
+                            <p>&#8377;199.99</p>
+                            <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                            <div id="message" class="message"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <!-- Product Card Example -->
+                    <div class="arrival-product">
+                        <div class="product-card">
+                            <img src="image/a5.jpg" alt="Arrival Product 5"><br>
+                        </div>
+                        <div class="product-card">
+                            <h3>New Arrival 5</h3>
+                            <p>&#8377;199.99</p>
+                            <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                            <div id="message" class="message"></div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card Example -->
+                    <div class="arrival-product">
+                        <div class="product-card">
+                            <img src="image/a6.jpg" alt="Arrival Product 6"><br>
+                        </div>
+                        <div class="product-card">
+                            <h3>New Arrival 6</h3>
+                            <p>&#8377;199.99</p>
+                            <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                            <div id="message" class="message"></div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card Example -->
+                    <div class="arrival-product">
+                        <div class="product-card">
+                            <img src="image/a7.jpg" alt="Arrival Product 7"><br>
+                        </div>
+                        <div class="product-card">
+                            <h3>New Arrival 7</h3>
+                            <p>&#8377;199.99</p>
+                            <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                            <div id="message" class="message"></div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card Example -->
+                    <div class="arrival-product">
+                        <div class="product-card">
+                            <img src="image/a8.jpg" alt="Arrival Product 8"><br>
+                        </div>
+                        <div class="product-card">
+                            <h3>New Arrival 8</h3>
+                            <p>&#8377;199.99</p>
+                            <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                            <div id="message" class="message"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <!-- Product Card Example -->
+                    <div class="arrival-product">
+                        <div class="product-card">
+                            <img src="image/a9.jpg" alt="Arrival Product 9"><br>
+                        </div>
+                        <div class="product-card">
+                            <h3>New Arrival 9</h3>
+                            <p>&#8377;199.99</p>
+                            <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                            <div id="message" class="message"></div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card Example -->
+                    <div class="arrival-product">
+                        <div class="product-card">
+                            <img src="image/a10.jpg" alt="Arrival Product 10"><br>
+                        </div>
+                        <div class="product-card">
+                            <h3>New Arrival 10</h3>
+                            <p>&#8377;199.99</p>
+                            <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                            <div id="message" class="message"></div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card Example -->
+                    <div class="arrival-product">
+                        <div class="product-card">
+                            <img src="image/a11.jpg" alt="Arrival Product 11"><br>
+                        </div>
+                        <div class="product-card">
+                            <h3>New Arrival 11</h3>
+                            <p>&#8377;199.99</p>
+                            <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                            <div id="message" class="message"></div>
+                        </div>
+                    </div>
+                    <!-- Product Card Example -->
+                    <div class="arrival-product">
+                        <div class="product-card">
+                            <img src="image/a12.jpg" alt="Arrival Product 12"><br>
+                        </div>
+                        <div class="product-card">
+                            <h3>New Arrival 12</h3>
+                            <p>&#8377;199.99</p>
+                            <button class="cta-button  add-to-cart" id="addToCartBtn">Add to Cart</button>
+                            <div id="message" class="message"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="slider-nav prev">&#10094;</button>
+            <button class="slider-nav next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeCartModal()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <div class="cart-actions">
+                <button id="checkout-button">Checkout</button>
+                <button id="empty-cart-button" onclick="emptyCart()">Empty Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSuccessModal()">&times;</span>
+            <p id="success-message">Item added to cart successfully!</p>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p class="intro">We are passionate about delivering high-quality products that exceed expectations. Our team
+                of dedicated professionals is committed to providing exceptional service and innovation.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Ankit Singh</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <h3>Ajeet Kumar</h3>
+                    <p>Chief Operating Officer</p>
+                </div>
+                <div class="team-member">
+                    <h3>Samir Singh</h3>
+                    <p>Lead Designer</p>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us" class="contact-us-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>Call Us</h3>
+                    <p><a href="tel:+1234567890">+91 1234567890</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>Visit Us</h3>
+                    <p>01234 Street Name,<br> City, Country</p>
+                </div>
+            </div>
+            <form action="#" method="post" class="contact-form" id="contact-form">
+                <h3>Send Us a Message</h3>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="name-error">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <div class="error-message" id="message-error">Message must be at least 10 characters long.</div>
+                </div>
+                <button type="submit" onclick="showSuccessModal(event)" class="submit-button">Send Message</button>
+            </form>
+        </div>
+        <!-- Successful Submission Modal -->
+        <div id="success-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeSuccessModal()">&times;</span>
+                <h2>Submission Successful</h2>
+                <p>Your message has been successfully sent. We will get back to you shortly.</p>
+                <button style="color: red;" onclick="closeSuccessModal()">Close</button>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <ul class="social-media">
+            <li><a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a></li>
+            <li><a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
